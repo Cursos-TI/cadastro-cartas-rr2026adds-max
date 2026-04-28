@@ -9,13 +9,12 @@ int main() {
   char Pais [50] ,EstadoA [50] ,EstadoB [50] ,CidadeA [50] ,CidadeB [50];
   int A01, B01, PopulacaoA, PopulacaoB, PontosturisticosA, PontosturisticosB;
   float AreaA, AreaB, PibA, PibB;
-    
+
+
   // Área para entrada de dados
-  printf("digite qual sera a carta:\n", A01);
-  scanf("%d", &A01);
-
-  printf("");
-
+  printf("digite qual sera a carta 1 ou 2:\n", A01, B01);
+  scanf("%d", &A01, &B01);
+  
   printf("digite o pais:\n", Pais);
   scanf("%s", &Pais);
 
@@ -28,7 +27,7 @@ int main() {
   printf("digite a população de A ou B:\n", PopulacaoA, PopulacaoB);
   scanf("%d", &PopulacaoA, PopulacaoB);
 
-  printf(" digite a Área de A ou B:\n", AreaA, AreaB);
+  printf("digite a Área de A ou B:\n", AreaA, AreaB);
   scanf("%f", &AreaA, AreaB);
 
   printf("digite o PIB de A ou B:\n", PibA, PibB);
@@ -38,10 +37,10 @@ int main() {
   scanf("%d", &PontosturisticosA, PontosturisticosB);
 
   // Área para exibição dos dados da cidade
-  printf(" - A01: %d - B01: %d\n - Pais: %s\n", A01, B01, Pais);
-  printf(" - Estado A: %s - Estado B: %s\n - Cidade A: %s - Cidade B: %s\n", EstadoA, EstadoB, CidadeA, CidadeB);
-  printf(" - População A: %d - População B: %d\n - Área A: %f - Área B: %f\n", PopulacaoA, PopulacaoB, AreaA, AreaB);
-  printf(" - PIB A: %f - PIB B: %f\n - Pontos Turisticos A: %d - Pontos Turisticos B: %d", PibA, PibB, PontosturisticosA, PontosturisticosB);
+  printf(" - Carta: A01 = %d                   - Carta: B01 = %d\n - Pais: %s                          - Pais: %d\n", A01, B01, Pais);
+  printf(" - Estado A: %s                      - Estado B: %s\n - Cidade A: %s                      - Cidade B: %s\n", EstadoA, EstadoB, CidadeA, CidadeB);
+  printf(" - População A: %d                 - População B: %d\n - Área A: %f               - Área B: %f\n", PopulacaoA, PopulacaoB, AreaA, AreaB);
+  printf(" - PIB A: %f                 - PIB B: %f\n - Pontos Turisticos A: %d          - Pontos Turisticos B: %d", PibA, PibB, PontosturisticosA, PontosturisticosB);
   
   
 return 0;
